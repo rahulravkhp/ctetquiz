@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.profile-info {
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 4px;
+}
+
+.question p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.score {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 20px;
+    padding: 10px;
+    background: #e9ecef;
+    border-radius: 4px;
+}
+
+.timer {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #ffe5e5;
+    border-radius: 4px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #d63031;
+}
+
+.history-table,
+.review-table,
+.ranking-table,
+.papers-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.history-table th,
+.history-table td,
+.review-table th,
+.review-table td,
+.ranking-table th,
+.ranking-table td,
+.papers-table th,
+.papers-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.history-table th,
+.review-table th,
+.ranking-table th,
+.papers-table th {
+    background: #007bff;
+    color: white;
+}
+
+.history-table tr:nth-child(even),
+.review-table tr:nth-child(even),
+.ranking-table tr:nth-child(even),
+.papers-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.correct {
+    color: green;
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red;
+    font-weight: bold;
+}
+
+.chart-container {
+    margin-top: 20px;
+}
+
+.test-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.test-question {
+    display: none;
+}
+
+.test-question.active {
+    display: block;
+}
+
+.caution-container {
+    background: #fff3cd;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .history-table,
+    .review-table,
+    .ranking-table,
+    .papers-table {
+        font-size: 0.9em;
+    }
+
+    .chart-container canvas {
+        max-width: 100%;
+    }
+
+    .test-navigation .btn {
+        font-size: 0.9em;
+        padding: 8px 12px;
+    }
+}
